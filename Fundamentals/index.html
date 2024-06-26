@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Fundamentals of HTML</h1>
+
+    <h2>Learn HTML: Elements</h2>
+
+    <h3>Introduction to HTML</h3>
+
+    <p>HTML is the skeleton of all web pages<p>
+    <p>HTML provides structure to the content appearing on a website</p>
+    <p>HTML stands for HyperText MArkup Language</p>
+    <p>mark up language is a computer langugage that define the strcutre and presentation of a raw text<p>
+
+    <h3>The body</h3>
+
+    <p>Only content inside the body tag will be visible in the screen</p>
+
+    <h3>HTML structure</h3>
+
+    <p>HTML is a collection of family tree relationships. when an element is contained inside another element, it is considered the child of that element</p>
+
+    <p>This paragraph tag is child of the body</p>
+    
+    <p>The child element is said to be NESTED inside of the parent element</p>
+
+    <p>The relationship between elements and their ancestor and descendant elements is known as hierarchy</p>
+
+    <div>
+        <h4>this H4 i am using is inside of a div, therefore the body elment is the parent of the div, the div is parent of the h4</h4>
+        <p>this pargarph tag is same level as the h4, making it a sibling to h4, and the parent would be the div.</p>
+        <p>Thus the paragraph and h4 tags are both grandchildren to the body element</p>
+        <p>it is crucial to understadn hierarchy as child elments can inehrit behabior and styling from the parent element</p>
+    </div>
+
+    <h1>Headings</h1>
+    <h2>There are 6 types</h2>
+    <h3>Heading can be used for different purposes</h3>
+    <h4>like tittling sections, articles</h4>
+    <h5>this is h5 now</h5>
+    <h6>This is h6</h6>
+
+    <p>h1 is used for main headings. all other smaller ehadings are used for subjeadings</p>
+
+    <h3>Divs</h3>
+
+    <p>Div is short for division, or container that divides the page into sections.</p>
+
+
+    <h3>Attributes</h3>
+    <p>Attributes are content added to the opening tag of an element and can be used in serveral ways, from providing information to changing styling</p>
+
+    <p>Attributes are made of name and a value. for example id = "idName" </p>
+
+    <h3>Dispaly Text</h3>
+
+    <p>I can use the paragraph tags, or span tags to display text. Paragraph tags to contain a block of plain text. Span contians short pieces of text or hoter HTML</p>
+
+    <p>Spans are used to seperate small pieces of content that are on the same line as other content</p>
+    
+    <p>the span element targets a speicfic piece of content</p>
+
+    <p>if you want to divide your content into blocks, use div</p>
+
+    <h3>Styling text</h3>
+
+    <p>You can style text using HTML tags</p>
+
+    <p>em and strong tags are two examples. Em gives you an italic styling, strong gives you bold</p>
+
+    <h3>Line breaks</h3>
+
+    <p>Line breaks breaks the line. So imagine i am about to write something long <br>
+        I can break it like how this line just started in a new line
+    </p>
+
+    <h3>Unordered List</h3>
+
+    <p>you can use the ul tags that will help you create a list of items, in an unordered fashion (bullet point)</p>
+
+    <p>the ul element shouldn't hold raw text and won't automatically format raw text into an unordered list of items</p>
+
+    <p>you have to have child element tags such as li tags inside the ul tag. The li tag describes one item in the list</p>
+
+    <ul>
+        <li>This</li>
+        <li>is</li>
+        <li>an</li>
+        <li>example</li>
+    </ul>
+    
+    <ul>
+        This one has no li tags, but is in a ul tag
+    </ul>
+
+    <h3>Ordered List</h3>
+
+    <p>Same as unorderd but this time, there is numbers isntead of bullet points, and you use ol tags, not ul</p>
+
+    <ol>
+        <li>An</li>
+        <li>ordered</li>
+        <li>list</li>
+        <li>in</li>
+        <li>motion</li>
+    </ol>
+
+    <h3>Images</h3>
+
+    <p>the img tag allows you to add an image to a web page</p>
+    <p>img tag is a self closing tag, like the line break tag</p>
+    <p>img tag has a required attribue called src, with the value being a URL - can be a web address or local address</p>
+
+    <img src="https://content.codecademy.com/courses/web-101/web101-image_brownbear.jpg" alt="">
+
+    <h3>Image Alts</h3>
+
+    <p>Part of beign an exceptional web developer is making your site is accesible to users of all backgrounds</p>
+    <p>Screen readers make use of image tag alt attribute. alt being smeaning to the imnages in our sites</p>
+    <p>the alt attribute should be a description of the image</p>
+    <p>the alt attribute is added just like the src attribute</p>
+
+    <h5>benefits of alt attribute</h5>
+    <ul>
+        <li>If image fails, user can mouse over the area origianlly intended for the image and read a breif descirption, this is made possible by the description you provide in the alt attribute</li>
+        <li>Visually imapred users often browser the web with the aid of screen readign software. Includign the alt attribute allows teh software to read the iamge description out loud to the visually imapired user</li>
+        <li>Plays a role in SEO. Having descriptive alts can improve ranking of the site</li>
+    </ul>
+
+    <p>Leave the ALT attribute empty if it doesnt convey meaningful information</p>
+
+    <h3>Videos</h3>
+
+    <p>Just like img tags, video elements requries a src attribute witha link to the video source. video tags are not self closing</p>
+    <p>Video src tags can be a video file that is hosted alongisde your webpage, or URL that points toa  video file hosted on another webpage</p>
+
+    <p>width and height attributes will modify the size of the video. controls will include basic video controls</p>
+
+    <p>Include "Video not supported" between the opening and closing video tags, this will only dispaly if the browser can't load the video</p>
+
+    <h3>Review</h3>
+    <ul>
+        <li>HTML - HyperText Markup Language. Used to create the strcutre and content of a webpage</li>
+    </ul>
+
+
+</body>
+</html>
