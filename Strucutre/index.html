@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Strucutre</h1>
+
+    <h2>HTML document standards</h2>
+    <p>We can let the browser know we are using HTML by starting out document witha document type declaration : "!DOCTYPE html " </p>
+
+    <p>Pretend the " " are great than or less than symbols</p>
+
+    <p>That declaration is an instruction. Tells the browser what type of ducment to expect. Thus always include it at the beginning. (first line)</p>
+
+    <h2>The html tag</h2>
+
+    <p>To create HTML structure, content, add html tags</p>
+    <p>Anything between this tag will be interpreted as HTML code</p>
+
+    <h2>Head tag</h2>
+
+    <p>the head element goes above the body element</p>
+
+    <p>the head element contains metadata for web page. Meta data is information about the page that is not dispalyed directly on the web page</p>
+
+    <p>The metadata in the head is information about the page itself.</p>
+
+    <h2>Page Titles</h2>
+
+    <p>What kind of metadata about the webpage can the head element contain?</p>
+
+    <p>for example, a browsers tab displays the title specified in the title tag. The title tag is always inside of the head. Title is an example. When you give the title a value, it will show on the tab (literally)</p>
+    
+
+    <h2>Linking to other web pages</h2>
+
+    <p>Power aspect of the HTML is the abiltiy to link other web pages</p>
+
+    <p>anchor tag using a, and the text of the link in between the tags. Make sure to use the attribute href.</p>
+
+    <p>Href stands for hypertext reference. Used to link a path, or the address to where a file is located.</p>
+
+    <p>Hyperlink means link</p>
+
+    <h2>Opening links in a new window</h2>
+
+    <p>Have you ever clicked on a link and observed the resulting web page open in a new browser window?</p>
+
+    <p>This is due to the target attribute.</p>
+    <p>Target attirubte decides how a link should open</p>
+    <p>For a link to open in a new window, use target and value as _blank </p>
+    <p>This attribute goes at the opening tag like href</p>
+
+    <h2>Linking to relative page</h2>
+
+    <p>Sites link to internal web pages too</p>
+
+    <p>HTML files are usually stored in root directory, or main folder</p>
+    <p>HTML files are often stored in the same folder. If the browser is currently displaying index.html, it can also know about about.html and contact.html if they in the same folder</p>
+
+    <p>If they in the same folder, you can link web pages using relative path using the href as the name and value as ./nameOfFile.html </p>
+
+    <ul>
+        <li>A relative path is a filename that shows the path to a local file. The ./ tells the browser to look for the file in the current folder</li>
+        <li>An absolute path is the complete route to a file or directory from the system root.</li>
+    </ul>
+ 
+    <h2>Linking at will</h2>
+
+    <p>You can turn nearly any element into a link</p>
+    <p>You can turn iamges into links by wrapping the img tag with an a tag</p>
+
+    <h2>Linking to same page</h2>
+
+    <p>Let's make it easier for a user to jump to different portions of the same page</p>
+
+    <ol>
+        <li>in order to link to a target on teh same page, we must give the target an id attribute</li>
+        <li>Assign the element (the target ) with the id attribute</li>
+        <li>ids should be descriptive</li>
+        <li>href the element that is going to link to that id. it shoulder prepend with a #</li>
+        <li>thus if we have a p tag with the id, value as top, the element with the href should be #top</li>
+    </ol>
+
+    <h2>Whitespace</h2>
+
+    <p>Browser ignores whitespaces in HTMl files when it renders a web page, so it can be used as a tool to make code easier to read and follow</p>
+
+    <h2>Indentation</h2>
+
+    <p>W3C recommends 2 spaces of indentation, when writing HTML code.</p>
+    <p>Indentation is used to easily visualise which elemetns are nested within other elements</p>
+
+    <h2>Comments</h2>
+
+    <p>HTML files allows you to add comments to your code <!-- This is a comment --></p>
+
+    <ol>
+        <li>Useful to organize your code when you come back after a long time</li>
+        <li>You can expriement with new code, so comment out the old one and try new one</li>
+    </ol>
+
+</body>
+</html>
