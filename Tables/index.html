@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+
+    <h1>HTML Tables</h1>
+
+    <div>
+        <h2>Introduction to Tables</h2>
+        <p>HTML tables presents information in a two-dimensional table to the users</p>
+
+        <ol>
+            <li>To create a table, you use table tag</li>
+            <li>Then you insert a table row element, tr, this creates a row</li>
+            <li>Then you insert a table data element, td, this cretes a cell</li>
+            <li>For example. having a table tag, 1 tr, 5 td, will get you a table with one row, two column</li>
+            <li>Example below, shows this</li>
+        </ol>
+
+        <table>
+            <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+                <td>Data 3</td>
+                <td>Data 4</td>
+                <td>Data 5</td>
+            </tr>
+        </table>
+       
+        <h3>There are titles that describe the data</h3>
+        <p>For example, table heading, th, gives more meaning than a simple td</p>
+        <p>th adds titles to rows or columns, depending on where you put it</p>
+        <p>Here is an example</p>
+
+        <table>
+            <tr>
+                <th></th>
+                <th scope="col">Saturday</th>
+                <th scope="col">Sunday</th>
+            </tr>
+            <tr>
+                <th scope="row">Temperature</th>
+                <td>72</td>
+                <td>83</td>
+            </tr>
+        </table>
+
+        <p>The scope attribute is for clarity</p>
+
+        <h3>Table borders</h3>
+
+        <p>CSS helps us style borders</p>
+        <p>At the time of making this, i haven't reached the CSS</p>
+
+        <h3>Spanning Column</h3>
+
+        <p>What if the table contains data that spans multiple columns</p>
+        <p>Data can span columns using the colspan attribute. The attribute accepts an integer, denoting the number of columns it spans across</p>
+        <p>Using the colspan attirube on the td element</p>
+
+        <table>
+            <tr>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+            </tr>
+            <tr>
+                <td colspan="2">Rest Day</td>
+                <td>Gym</td>
+            </tr>
+        </table>
+        <p>In this table, rest day is spanned two columns. It is not that visible due to absence of CSS</p>
+
+        <h3>Spanning rows</h3>
+
+        <p>Data can also span multiple rows using the rowspan attribute</p>
+        <p>Same as colspan, maybe the data for this spans multiple rows, accepting an integer to denote the number of rows it spans across</p>
+
+        <table>
+            <tr>
+                <th></th>
+                <th>Saturday</th>
+                <th>Sunday</th>
+            </tr>
+            <tr>
+                <th>Morning</th>
+                <td rowspan="2">Work</td>
+                <td rowspan="3">Relax</td>
+            </tr>
+            <tr>
+                <th>Afternoon</th>
+            </tr>
+            <tr>
+                <th>Evening</th>
+                <td>Dinner</td>
+            </tr>
+        </table>
+
+        <h3>Table body</h3>
+
+        <p>The tbody element helps us to section off. This element should contain all the table's data, excluding the table ehadings</p>
+
+        <h3>Table head</h3>
+
+        <p>Using the thead, same concept at the tbody</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th scope="col">Saturday</th>
+                    <th scope="col">Sunday</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Morning</th>
+                    <td rowspan="2">Work</td>
+                    <td rowspan="3">Relax</td>
+                </tr>
+                <tr>
+                    <th scope="row">Afternoon</th>
+                </tr>
+                <tr>
+                    <th scope="row">Evening</th>
+                    <td>Dinner</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>You can see, the table above is same as table in the example before, but in code, it looks more neat</p>
+        <p>Only the column headings go under the thead elements.</p>
+        <p>The scope attributers tells us what the element is being used for, row or column</p>
+
+        <h3>The bottom part of the table can be sectioned off using Table Footer</h3>
+
+        <p>Use tfoot to to contain sums, diffrences, other data results.</p>
+
+        <h3>Styling with CSS</h3>
+
+        <p>Tables are very bland</p>
+        <p>CSS is a lanugage to use to style HTML content</p>
+
+        <h3>Quiz</h3>
+        
+        <p>What tag adds a new row header to an HTML table?</p>
+        <p>th scope col th</p>
+
+
+    </div>
+    
+    
+
+    
+</body>
+</html>
