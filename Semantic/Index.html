@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Semantics HTML</h1>
+
+    <h2>Introduction to Semantic HTML</h2>
+    <p>Semantic elements provide information about the content between the opening and closing tags</p>
+
+    <p>Rather than using just div and span, using HTML elements based on their meaning is SEMANTIC HTML</p>
+    <p>Using a header element instead of a div element, ir povides context as to what information is inside of the opening/closing tag</p>
+
+    <h4>Why <strong>SEMANTIC HTML</strong></h4>
+    <ul>
+        <li>Accessbility. Screen readers and browsers will be able to interpret the code better</li>
+        <li>SEO. Improves Search Engine Optimization</li>
+        <li>Easy to understand</li>
+    </ul>
+
+    <p>Think of a shop with no signs on the aisles. That is non semantic</p>
+    <p>A shop with signs for each aisle make its alot easier to find items you need</p>
+
+    <h2>Header and Nav</h2>
+
+    <p>A header tag is usually a container consisting of navigational links or introductory content containing h1 to h6</p>
+    <p>Now imagine having a div with an id of header. Compare them two. Using header allows easier read, identfiication</p>
+    <p>Using div provides no details</p>
+
+    <hr>
+
+    <p>Using a nav, it defines a block of navigation. Nav can also be used inside a header element</p>
+
+    <h2>Main and footer</h2>
+
+    <p>The main element is used to encapsulate teh dominant content within a webpage</p>
+    <p>This tag is separate from teh footer and the nav since these elments don't contain the principal content</p>
+    <p>Using main instead of div element , screen reader and browsers are better able to identify that whatever is inside of the tag, is the bulk of the content</p>
+    
+    <hr>
+
+    <p>Information within the footer tag are details such as contact information, copyright, terms of use</p>
+    <p>The footer tag is seperate from the main element</p>
+    
+    <hr>
+
+    <h2>Artcle and Section</h2>
+
+    <p>These two elements can go in the body, in the main</p>
+
+    <p>Section defines elements in a document, such as chapters, headings or any other area of the document with the same theme</p>
+    <p>Content about the same theme can go under a single section</p>
+
+    <p>A website's homepage can be split into sections such as introduction, news, and contact information</p>
+
+    <p>Article element holds content that makes sense on its own</p>
+    <p>Article element can hold content such as artcles, blogs, comments</p>
+    <p>An article element can help a screen reader undersands where the article content begins and ends.</p>
+
+    <hr>
+
+    <p>A section can be placed in an artcle element depend on context. And an article can be placed inside a section element</p>
+
+    <h2>Aside element</h2>
+
+    <p>This is used to mark additional information that can enhance another element</p>
+    <p>It can be used alongside article, or section.</p>
+    <p>Comments, quotes, bibliographies can go in here</p>
+
+    <h2>Figuure and Figcaption</h2>
+
+    <p>The figure element is used to encapulate media such as an image, illustration, diagram, etc...</p>
+    <p>You can insert your image tag in here</p>
+
+    <p>The figcaption is an element you can use to describe the media in the figure tag</p>
+    <p>The figcaption element goes inside the figure element</p>
+
+    <h2>Audio and attributes</h2>
+
+    <p>The audio element is used to embed audio content into a document</p>
+    <p>You have to create an audio tag, then insert a source tag inside it. Source is a self closing tag with src, controls and type as the attribute</p>
+
+    <h2>Video and Embed</h2>
+
+    <p>Add videos using the video tag, unlike audio, you can use just the video tag and insert src, controls, autoplay, loop as attributes</p>
+    <p>Makes it clear to the developer that  avideo is being attempted to be displayed</p>
+
+</body>
+</html>
